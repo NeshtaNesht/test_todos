@@ -4,6 +4,16 @@ import "./style.css";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
+/**
+ * Модальное окно
+ * @param {element} children
+ * @param {bool} visibility Видимость окна
+ * @param {func} onSave Обработчик сохранения
+ * @param {func} onCancel Обработчик закрытия
+ * @param {string} title Заголовок окна
+ * @param {bool} isRedirect Нужно ли делать переход на другую страницу по кнопке Save
+ * @param {string} toRedirect Куда перенаправлять, если isRedirect == true
+ */
 const Modal = ({
   children,
   visibility,
@@ -46,10 +56,14 @@ const Modal = ({
   );
 };
 
-Modal.proptypes = {
+Modal.propTypes = {
   children: PropTypes.element,
   visibility: PropTypes.bool,
-  controls: PropTypes.element,
+  onSave: PropTypes.func,
+  onCancel: PropTypes.func,
+  title: PropTypes.string,
+  isRedirect: PropTypes.bool,
+  toRedirect: PropTypes.string,
 };
 
 export default Modal;

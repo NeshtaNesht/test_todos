@@ -2,6 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./style.css";
 
+/**
+ *
+ * @param {object} todo Объект заметки
+ * @param {func} onClick Обработчик нажатия на заметку
+ */
 const Todos = ({ todo, onClick }) => {
   return (
     <div className="todos" onClick={onClick}>
