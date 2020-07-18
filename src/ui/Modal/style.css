@@ -1,0 +1,37 @@
+.modal {
+  min-height: 300px;
+  min-width: 400px;
+  left: 50%;
+  top: 50%;
+  margin: -200px -200px;
+  position: absolute;
+  display: flexbox;
+  background: #d1bda2;
+  padding: 0;
+}
+
+.modal .header {
+  display: block;
+  background: #d1bda2;
+  margin: 0 auto;
+  color: black;
+  padding: 0;
+  border-bottom: 1px solid white;
+}
+
+.modal .children {
+  display: flexbox;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.modal .controls {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.controls div {
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,22 @@
+input[type="button"] {
+  background: #90806a;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid #fcf2e5;
+  transition: 0.2s;
+  border-radius: 10px;
+  color: white;
+}
+
+input[type="button"]:hover {
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid #90806a;
+  color: black;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+input[type="button"]:active,
+input[type="button"]:focus {
+  outline: none;
+}

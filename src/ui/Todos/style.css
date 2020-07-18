@@ -1,0 +1,56 @@
+.container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.box {
+  white-space: nowrap;
+}
+
+.todos {
+  border: 1px solid #90806a;
+  padding: 5px 15px;
+  min-width: 100px;
+  min-height: 100px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.todos:hover {
+  background-color: #90806a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.todos:last-child {
+  margin-right: 0;
+}
+
+.todos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  padding: 1px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 5px - rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.list .success {
+  border-color: green;
+  border-left: 10px solid green;
+}
+
+.list .fail {
+  border-color: red;
+  border-left: 10px solid red;
+}

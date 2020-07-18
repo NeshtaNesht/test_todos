@@ -1,0 +1,33 @@
+import React from "react";
+import PropTypes from "prop-types";
+import "./style.css";
+
+const Todos = ({ todo, onClick }) => {
+  return (
+    <div className="todos" onClick={onClick}>
+      <h3>{todo.header}</h3>
+      <ul className="list">
+        {todo.tasks.map((v, k) => (
+          <li key={k} className={v.isDone ? "success" : "fail"}>
+            {v.title}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+Todos.propTypes = {
+  todo: PropTypes.shape({
+    header: PropTypes.string,
+    tasks: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string,
+        isDone: PropTypes.bool,
+      })
+    ),
+  }),
+  onClick: PropTypes.func,
+};
+
+export default Todos;
