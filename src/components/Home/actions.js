@@ -7,7 +7,7 @@ export const addTodo = (todo) => {
     ...todo.todos,
     {
       id: todo.todos.length,
-      header: todo.nameTodo,
+      header: !!todo.nameTodo ? todo.nameTodo : " ",
       tasks: [],
     },
   ];
