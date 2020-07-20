@@ -14,14 +14,14 @@ const App = () => {
         exact
         path="/"
         render={() => {
-          dispatch(setTitle("ЗАМЕТКИ")); // Меняем заголовок
+          dispatch(setTitle("Заметки")); // Меняем заголовок
           return <Home />;
         }}
       />
       <Route
         path="/edittodo/:header"
         render={() => {
-          dispatch(setTitle("РЕДАКТИРОВАНИЕ ЗАМЕТКИ"));
+          dispatch(setTitle("Редактирование заметки"));
           return <EditTodo />;
         }}
       />

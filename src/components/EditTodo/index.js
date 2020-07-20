@@ -55,7 +55,7 @@ const EditTodo = () => {
   );
 
   return (
-    <div>
+    <div style={{ width: "100%", margin: "auto" }}>
       {modalDeleteuccess}
       {modalSaveSuccess}
       <div className={{ display: "block" }}>
