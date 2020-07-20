@@ -60,7 +60,7 @@ const Home = () => {
       >
         <form>
           <label>
-            Наименование:
+            <span style={{ marginRight: 15 }}>Наименование:</span>
             <input
               type="text"
               value={nameTodo}

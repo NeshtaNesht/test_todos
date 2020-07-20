@@ -1,22 +1,38 @@
 input[type="button"] {
-  background: #90806a;
+  background: #1e90ff;
   padding: 10px;
   font-size: 20px;
-  border: 2px solid #fcf2e5;
-  transition: 0.2s;
+  transition: 0.1s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  color: white;
+  color: #ffffff;
+  outline: none;
+  border: 1px solid #1e90ff;
+  font-weight: normal;
+  margin-left: 15px;
 }
 
 input[type="button"]:hover {
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid #90806a;
-  color: black;
-  transition: 0.2s;
+  background: #ffffff;
+  color: #1e90ff;
+  transition: 0.1s;
   cursor: pointer;
 }
 
 input[type="button"]:active,
 input[type="button"]:focus {
   outline: none;
+}
+
+input[class="deleteButton"] {
+  background: none;
+  border: 0;
+  color: red;
+  margin-left: 90px;
+}
+
+input[class="deleteButton"]:hover {
+  background-color: red;
+  color: white;
+  border: 0;
 }

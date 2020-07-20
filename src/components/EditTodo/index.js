@@ -58,11 +58,17 @@ const EditTodo = () => {
     <div>
       {modalDeleteuccess}
       {modalSaveSuccess}
-      <Button
-        style={{ backgroundColor: "red" }}
-        value="Удалить заметку"
-        onClick={closeModal}
-      />
+      <div className={{ display: "block" }}>
+        <Button value="Сохранить" onClick={() => setVisibilitySave(true)} />
+        <Link to="/">
+          <Button value="Отменить" />
+        </Link>
+        <Button
+          className="deleteButton"
+          value="Удалить заметку"
+          onClick={closeModal}
+        />
+      </div>
       <p>Наименование заметки: </p>
       <input
         type="text"
@@ -82,12 +88,6 @@ const EditTodo = () => {
           />
         );
       })}
-      <div className={{ display: "block" }}>
-        <Button value="Сохранить" onClick={() => setVisibilitySave(true)} />
-        <Link to="/">
-          <Button value="Отменить" />
-        </Link>
-      </div>
     </div>
   );
 };
