@@ -72,6 +72,7 @@ a:active {
   margin-bottom: 15px;
   transition: 0.1s all linear;
   border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .todos > h3 {
