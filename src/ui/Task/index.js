@@ -10,7 +10,7 @@ const Task = ({ task, onChecked, onTitleChange, onClickDelete }) => {
         onChange={onChecked}
         checked={task.isDone}
       />
-      <label for={task.id}></label>
+      <label htmlFor={task.id}></label>
       <input
         type="text"
         onChange={onTitleChange}

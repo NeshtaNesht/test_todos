@@ -10,11 +10,11 @@ import "./style.css";
 const Todos = ({ todo, onClick }) => {
   return (
     <div className="todos" onClick={onClick}>
-      <h3>{todo.header}</h3>
+      <h3>{todo.header}:</h3>
       <ul className="list">
         {todo.tasks.map((v, k) => (
           <li key={k} className={v.isDone ? "success" : "fail"}>
-            {v.title}
+            <span>{v.title}</span>
           </li>
         ))}
       </ul>

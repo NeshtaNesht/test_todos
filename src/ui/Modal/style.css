@@ -1,9 +1,9 @@
 .modal {
-  min-height: 300px;
+  min-height: 10px;
   min-width: 400px;
   left: 50%;
   top: 50%;
-  margin: -200px -200px;
+  margin: -100px -200px;
   position: absolute;
   display: flexbox;
   background: #ffffff;
@@ -28,15 +28,13 @@
 }
 
 .modal .children {
-  display: flexbox;
+  display: block;
   text-align: center;
   padding: 10px 0;
 }
 
 .modal .controls {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
+  position: block;
 }
 
 .controls div {

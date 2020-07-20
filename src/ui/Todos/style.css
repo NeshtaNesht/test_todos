@@ -1,4 +1,4 @@
-.container {
+/* .container {
   width: 100%;
 }
 
@@ -55,4 +55,58 @@
 .list .fail {
   border-color: red;
   border-left: 10px solid red;
+} */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+.todos {
+  margin-top: 15px;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.1s all linear;
+  border: 1px solid #e3e3e3;
+}
+
+.todos > h3 {
+  transition: 0.1s all linear;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 20px;
+}
+
+.todos > h3:hover {
+  cursor: pointer;
+}
+
+.todos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todos ul {
+  margin: 5px 0;
+}
+
+.todos ul li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.list .success {
+  border-color: green;
+  border-left: 4px solid green;
+}
+
+.list .fail {
+  border-color: red;
+  border-left: 4px solid red;
 }
