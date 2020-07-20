@@ -23,6 +23,13 @@ const Modal = ({
   isRedirect = false,
   toRedirect,
 }) => {
+  const btnSave = (
+    <Button
+      value="Сохранить"
+      style={{ marginRight: 50, marginBottom: 10 }}
+      onClick={onSave}
+    />
+  );
   return (
     visibility && (
       <div className="modal">
@@ -32,22 +39,7 @@ const Modal = ({
         <div className="children">{children}</div>
         <div className="controls">
           <div>
-            {isRedirect ? (
-              <Link to={toRedirect}>
-                <Button
-                  value="Сохранить"
-                  style={{ marginRight: 50, marginBottom: 10 }}
-                  onClick={onSave}
-                />
-              </Link>
-            ) : (
-              <Button
-                value="Сохранить"
-                style={{ marginRight: 50, marginBottom: 10 }}
-                onClick={onSave}
-              />
-            )}
-
+            {isRedirect ? <Link to={toRedirect}>{btnSave}</Link> : btnSave}
             <Button value="Отмена" onClick={onCancel} />
           </div>
         </div>
